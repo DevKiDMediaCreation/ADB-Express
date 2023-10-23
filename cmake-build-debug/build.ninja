@@ -55,8 +55,8 @@ build CMakeFiles/ADB_Express.dir/main.cpp.obj: CXX_COMPILER__ADB_Express_unscann
   OBJECT_DIR = CMakeFiles\ADB_Express.dir
   OBJECT_FILE_DIR = CMakeFiles\ADB_Express.dir
 
-build CMakeFiles/ADB_Express.dir/disconnect.cpp.obj: CXX_COMPILER__ADB_Express_unscanned_Debug G$:/Project/ADB-Express/disconnect.cpp || cmake_object_order_depends_target_ADB_Express
-  DEP_FILE = CMakeFiles\ADB_Express.dir\disconnect.cpp.obj.d
+build CMakeFiles/ADB_Express.dir/connect.cpp.obj: CXX_COMPILER__ADB_Express_unscanned_Debug G$:/Project/ADB-Express/connect.cpp || cmake_object_order_depends_target_ADB_Express
+  DEP_FILE = CMakeFiles\ADB_Express.dir\connect.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\ADB_Express.dir
   OBJECT_FILE_DIR = CMakeFiles\ADB_Express.dir
@@ -69,7 +69,7 @@ build CMakeFiles/ADB_Express.dir/disconnect.cpp.obj: CXX_COMPILER__ADB_Express_u
 #############################################
 # Link the executable ADB_Express.exe
 
-build ADB_Express.exe: CXX_EXECUTABLE_LINKER__ADB_Express_Debug CMakeFiles/ADB_Express.dir/main.cpp.obj CMakeFiles/ADB_Express.dir/disconnect.cpp.obj
+build ADB_Express.exe: CXX_EXECUTABLE_LINKER__ADB_Express_Debug CMakeFiles/ADB_Express.dir/main.cpp.obj CMakeFiles/ADB_Express.dir/connect.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ADB_Express.dir
