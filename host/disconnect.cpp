@@ -1,14 +1,16 @@
 //
 // Created by DevKiD on 23.10.2023.
 //
+
 #include <iostream>
 #include <string>
-#include <stdexcept>
-#include <cstdlib> // For the system() function
+
+#include "disconnect.h"
+
 
 using namespace std;
 
-int disconnect(string index) {
+int disconnect::disconnectf(string index) {
     cout << "Exit (0 USB, 1 WiFi)";
     if (cin.get() == 0) {
         try {

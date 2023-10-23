@@ -1,0 +1,7 @@
+# ADB-Express File
+connect 192.168.2.104:5555
+
+off
+delay
+on
+text "Hello, World!"

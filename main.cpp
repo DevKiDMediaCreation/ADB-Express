@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
-#include <random>
 
-#include "disconnect.cpp"
-#include "connect.cpp"
+#include "host/disconnect.cpp"
+#include "host/connect.cpp"
+#include "script/handler.cpp"
+#include "host/hosthandler.h"
 
 using namespace std;
 
@@ -39,11 +40,6 @@ int adb_install() {
     return 0;
 }
 
-int add_devices(string ip) {
-    devices.push_back(ip);
-    return 0;
-}
-
 int main() {
 
 /*    if (!adb_install()) {
@@ -55,18 +51,11 @@ int main() {
 #else
     system("clear");
 #endif */
-    vector<string> devices;
-    char buffer[128];
-    FILE *pipe = popen("adb devices", "r");
-    if (!pipe) {
-        cerr << "Error: Failed to run command." << endl;
-        return 1;
-    }
-
     cout << "Restart the ADB services..." << endl;
     system("adb kill-server && adb start-server");
 
-    cout << "Welcome to ADB-Express Core Free Edition Version 1.0 Alpha Beta: Data Transfer Protocol Wine Taste" << endl;
+    cout << "Welcome to ADB-Express Core Free Edition Version 1.0 Alpha Beta: Data Transfer Protocol Wine Taste"
+         << endl;
 
     while (true) {
 
@@ -84,27 +73,22 @@ int main() {
         cout << "9 Advance" << endl;
         cout << "Enter mode (): ";
 
-        if (cin.get() ==0) {
-            string deviceIP;
-            cout << "Enter the IP:PORT to pair the devices: ";
-            cin >> deviceIP;
-
-            try {
-                system(("adb pair " + deviceIP).c_str());
-
-            } catch (const std::exception &e) {
-                std::cerr << e.what() << '\n';
-                return 1;
-            }
-
-            cout << "\nPaired to " << deviceIP << " was successfully." << endl;
-        } else if (cin.get() ==1) {
-            connect();
-        } else if (cin.get() ==2) {
-            cout << "Enter the index you want disconnect (all, 0, 1...): ";
-            string i;
-            cin >> i;
-            disconnect(i);
+        if (cin.get() == 0) {
+            // Pair mode
+            hosthandler hosthandlerc;
+            hosthandlerc.hosthandlerfPair();
+        } else if (cin.get() == 1) {
+            // Connection mode
+            connect connector;
+            connector.connectf();
+        } else if (cin.get() == 2) {
+            // Disconnect mode
+            hosthandler hosthandlerc;
+            hosthandlerc.hosthandlerfDisconn();
+        } else if (cin.get() == 6) {
+            // Handle manuel
+            handler handlerc;
+            handlerc.handlerf();
         } else {
             cout << "Don't exist";
         }

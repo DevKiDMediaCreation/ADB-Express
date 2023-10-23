@@ -3,13 +3,12 @@
 //
 #include <iostream>
 #include <string>
-#include <random>
 
-#include "main.cpp"
+#include "connect.h"
 
 using namespace std;
 
-int connect() {
+int connect::connectf() {
     cout << "0 via WiFi" << endl;
     cout << "1 via USB" << endl;
     cout << "Enter mode (): ";
@@ -27,8 +26,6 @@ int connect() {
             return 1;
         }
 
-        add_devices(device_ip);
-
         cout << "Connected to " << device_ip << endl;
     } else if (cin.get() == 1) {
         try {
@@ -38,7 +35,6 @@ int connect() {
             std::cerr << e.what() << '\n';
             return 1;
         }
-        add_devices("USB");
         cout << "Connected via USB" << endl;
     } else {
         cout << "Don't exist" << endl;
