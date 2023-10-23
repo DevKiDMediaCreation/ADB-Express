@@ -1,0 +1,3 @@
+G:/Project/ADB-Express/cmake-build-debug/CMakeFiles/ADB_Express.dir
+G:/Project/ADB-Express/cmake-build-debug/CMakeFiles/edit_cache.dir
+G:/Project/ADB-Express/cmake-build-debug/CMakeFiles/rebuild_cache.dir
