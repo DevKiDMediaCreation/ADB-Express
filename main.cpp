@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 
-#include "host/disconnect.cpp"
-#include "host/connect.cpp"
-#include "script/handler.cpp"
+#include "host/connect.h"
+#include "host/disconnect.h"
 #include "host/hosthandler.h"
+#include "script/handler.h"
+#include "host/connect.cpp"
 
 using namespace std;
 
@@ -57,9 +58,10 @@ int main() {
     cout << "Welcome to ADB-Express Core Free Edition Version 1.0 Alpha Beta: Data Transfer Protocol Wine Taste"
          << endl;
 
-    while (true) {
+    hosthandler hosthandlerc;
+    handler handlerc;
 
-        int mode;
+    while (true) {
         cout << "0 for pair mode" << endl;
         cout << "1 for connect mode" << endl;
         cout << "2 disconnect" << endl;
@@ -71,26 +73,29 @@ int main() {
         cout << "7 List devices" << endl;
         cout << "8 exit" << endl;
         cout << "9 Advance" << endl;
-        cout << "Enter mode (): ";
+        cout << "10 Install APK" << endl;
+        cout << "11 Uninstall APK" << endl;
+        cout << "12 Reboot" << endl;
+        cout << "Enter your choice." << endl;
+        string input;
+        getline(cin, input);
+        cout << "Enter mode: " << input << endl;
 
-        if (cin.get() == 0) {
+        if (input == "0") {
             // Pair mode
-            hosthandler hosthandlerc;
             hosthandlerc.hosthandlerfPair();
-        } else if (cin.get() == 1) {
+        } else if (input == "1") {
             // Connection mode
             connect connector;
             connector.connectf();
-        } else if (cin.get() == 2) {
+        } else if (input == "2") {
             // Disconnect mode
-            hosthandler hosthandlerc;
             hosthandlerc.hosthandlerfDisconn();
-        } else if (cin.get() == 6) {
+        } else if (input == "6") {
             // Handle manuel
-            handler handlerc;
             handlerc.handlerf();
         } else {
-            cout << "Don't exist";
+            cout << "\nDon't exist" << endl;
         }
     }
     return 0;

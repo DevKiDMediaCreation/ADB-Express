@@ -103,6 +103,18 @@ build CMakeFiles/ADB_Express.dir/host/pair.cpp.obj: CXX_COMPILER__ADB_Express_un
   OBJECT_DIR = CMakeFiles\ADB_Express.dir
   OBJECT_FILE_DIR = CMakeFiles\ADB_Express.dir\host
 
+build CMakeFiles/ADB_Express.dir/host/disconnect.cpp.obj: CXX_COMPILER__ADB_Express_unscanned_Debug G$:/Project/ADB-Express/host/disconnect.cpp || cmake_object_order_depends_target_ADB_Express
+  DEP_FILE = CMakeFiles\ADB_Express.dir\host\disconnect.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ADB_Express.dir
+  OBJECT_FILE_DIR = CMakeFiles\ADB_Express.dir\host
+
+build CMakeFiles/ADB_Express.dir/host/tcpip.cpp.obj: CXX_COMPILER__ADB_Express_unscanned_Debug G$:/Project/ADB-Express/host/tcpip.cpp || cmake_object_order_depends_target_ADB_Express
+  DEP_FILE = CMakeFiles\ADB_Express.dir\host\tcpip.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ADB_Express.dir
+  OBJECT_FILE_DIR = CMakeFiles\ADB_Express.dir\host
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ADB_Express
@@ -111,7 +123,7 @@ build CMakeFiles/ADB_Express.dir/host/pair.cpp.obj: CXX_COMPILER__ADB_Express_un
 #############################################
 # Link the executable ADB_Express.exe
 
-build ADB_Express.exe: CXX_EXECUTABLE_LINKER__ADB_Express_Debug CMakeFiles/ADB_Express.dir/main.cpp.obj CMakeFiles/ADB_Express.dir/host/connect.cpp.obj CMakeFiles/ADB_Express.dir/movement/text.cpp.obj CMakeFiles/ADB_Express.dir/movement/manuel.cpp.obj CMakeFiles/ADB_Express.dir/movement/swipe.cpp.obj CMakeFiles/ADB_Express.dir/script/script.cpp.obj CMakeFiles/ADB_Express.dir/script/handler.cpp.obj CMakeFiles/ADB_Express.dir/host/hosthandler.cpp.obj CMakeFiles/ADB_Express.dir/host/pair.cpp.obj
+build ADB_Express.exe: CXX_EXECUTABLE_LINKER__ADB_Express_Debug CMakeFiles/ADB_Express.dir/main.cpp.obj CMakeFiles/ADB_Express.dir/host/connect.cpp.obj CMakeFiles/ADB_Express.dir/movement/text.cpp.obj CMakeFiles/ADB_Express.dir/movement/manuel.cpp.obj CMakeFiles/ADB_Express.dir/movement/swipe.cpp.obj CMakeFiles/ADB_Express.dir/script/script.cpp.obj CMakeFiles/ADB_Express.dir/script/handler.cpp.obj CMakeFiles/ADB_Express.dir/host/hosthandler.cpp.obj CMakeFiles/ADB_Express.dir/host/pair.cpp.obj CMakeFiles/ADB_Express.dir/host/disconnect.cpp.obj CMakeFiles/ADB_Express.dir/host/tcpip.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ADB_Express.dir

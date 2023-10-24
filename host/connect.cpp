@@ -8,12 +8,14 @@
 
 using namespace std;
 
-int connect::connectf() {
+inline int connect::connectf() {
     cout << "0 via WiFi" << endl;
     cout << "1 via USB" << endl;
-    cout << "Enter mode (): ";
+    string input;
+    getline(cin, input);
+    cout << "Enter mode: " << input << endl;
 
-    if (cin.get() == 0) {
+    if (input == "0") {
         string device_ip;
         cout << "Enter the IP address of your Android device: ";
         cin >> device_ip;
@@ -27,7 +29,7 @@ int connect::connectf() {
         }
 
         cout << "Connected to " << device_ip << endl;
-    } else if (cin.get() == 1) {
+    } else if (input == "1") {
         try {
             system("adb usb attach");
 

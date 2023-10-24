@@ -9,7 +9,7 @@
 
 using namespace std;
 
-int swipe::custom_swipe(int x1, int y1, int x2, int y2, int duration) {
+int swipe::custom_swipe(int x1, int y1, int x2, int y2, int duration = 100) {
     try {
         system(("adb shell input swipe " + to_string(x1) + " " + to_string(y1) + " " + to_string(x2) + " " +
                to_string(y2) + " " + to_string(duration)).c_str());

@@ -11,6 +11,8 @@
 class text {
     public:
     int textf(std::string text);
+    int removef();
+    int delf();
 };
 
 #endif //ADB_EXPRESS_TEXT_H

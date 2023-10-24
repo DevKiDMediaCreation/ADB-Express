@@ -10,7 +10,7 @@
 
 using namespace std;
 
-int disconnect::disconnectf(string index) {
+inline int disconnect::disconnectf(string index) {
     cout << "Exit (0 USB, 1 WiFi)";
     if (cin.get() == 0) {
         try {

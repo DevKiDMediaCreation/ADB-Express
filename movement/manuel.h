@@ -44,6 +44,11 @@ public:
     int notification();
     int quick_settings();
     int search();
+    int remove();
+    int arrow_right();
+    int arrow_left();
+    int arrow_up();
+    int arrow_down();
 };
 
 #endif //ADB_EXPRESS_MANUEL_H

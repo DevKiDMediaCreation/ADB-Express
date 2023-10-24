@@ -39,6 +39,7 @@ int manuel::sleep() {
     return 0;
 }
 
+// Need authorization
 int manuel::reboot() {
     try {
         system("adb shell reboot");
@@ -221,6 +222,7 @@ int manuel::reboot_reset_google() {
     }
     return 0;
 }
+// End of authorization
 
 int manuel::home() {
     try {
@@ -388,5 +390,55 @@ int manuel::search() {
         return 1;
     }
 
+    return 0;
+}
+
+inline int manuel::remove() {
+    try {
+        system("adb shell input keyevent 112"); // Press Backspace
+    } catch (const std::exception &e) {
+        std::cerr << e.what() << '\n';
+        return 1;
+    }
+    return 0;
+}
+
+inline int manuel::arrow_right() {
+    try {
+        system("adb shell input keyevent 22"); // Press Right Arrow
+    } catch (const std::exception &e) {
+        std::cerr << e.what() << '\n';
+        return 1;
+    }
+    return 0;
+}
+
+inline int manuel::arrow_left() {
+    try {
+        system("adb shell input keyevent 21"); // Press Left Arrow
+    } catch (const std::exception &e) {
+        std::cerr << e.what() << '\n';
+        return 1;
+    }
+    return 0;
+}
+
+inline int manuel::arrow_up() {
+    try {
+        system("adb shell input keyevent 19"); // Press Up Arrow
+    } catch (const std::exception &e) {
+        std::cerr << e.what() << '\n';
+        return 1;
+    }
+    return 0;
+}
+
+inline int manuel::arrow_down() {
+    try {
+        system("adb shell input keyevent 20"); // Press Down Arrow
+    } catch (const std::exception &e) {
+        std::cerr << e.what() << '\n';
+        return 1;
+    }
     return 0;
 }

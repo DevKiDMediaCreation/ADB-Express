@@ -6,7 +6,7 @@
 #include <string>
 
 #include "hosthandler.h"
-#include "disconnect.h"
+#include "disconnect.cpp"
 #include "pair.h"
 
 using namespace std;

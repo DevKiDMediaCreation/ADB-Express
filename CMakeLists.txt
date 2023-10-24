@@ -21,4 +21,9 @@ add_executable(ADB_Express main.cpp
         host/hosthandler.h
         host/pair.cpp
         host/pair.h
+        host/disconnect.cpp
+        host/disconnect.cpp
+        host/tcpip.cpp
+        host/tcpip.h
+        host/tcpip.cpp
 )
