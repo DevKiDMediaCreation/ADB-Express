@@ -4,13 +4,28 @@ A extended Remote Controll with ADB. ADB-Express
 ## Code language
 
 ### App
-open alias - Open a app by alias name
-open package - Open a app by package
-close app - Close the current app
-close all - Close all apps
-app install package - Install a app from the Play Store by Google
-app install url - Install by Url
-app install file - Install by local computer
+```js
+open alias {YouTube} // Open a app by alias name
+```
+```js
+open package {com.google.youtube} // Open a app by package
+```
+```js
+close app // Close the current app
+```
+```js
+close all // Close all apps
+```
+```js
+app install package {com.google.youtube} // Install a app from the Play Store by Google
+```
+```js
+app install url {url} // Install by Url
+```
+```js
+app install file {.apk} // Install by local computer
+```
+
 
 ### ???
 ```js
