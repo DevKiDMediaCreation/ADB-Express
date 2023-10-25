@@ -6,20 +6,25 @@
 #include <string>
 
 #include "disconnect.h"
+#include "../core/getinput.h"
 
 
 using namespace std;
 
+// NO IDEA???????????????????????
+
+
 inline int disconnect::disconnectf(string index) {
-    cout << "Exit (0 USB, 1 WiFi)";
-    if (cin.get() == 0) {
+    getinput inputf;
+    string input = inputf.getinputf("Exit (0 USB, 1 WiFI): ");
+    if (input == "0") {
         try {
             system("adb usb detach");
         } catch (const exception &e) {
             cerr << e.what() << '\n';
             return 1;
         }
-    } else if (cin.get() == 1) {
+    } else if (input == "1") {
         for (char &c: index) {
             c = tolower(c); // Convert the index to lowercase
         }

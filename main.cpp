@@ -2,10 +2,12 @@
 #include <string>
 
 #include "host/connect.h"
-#include "host/disconnect.h"
 #include "host/hosthandler.h"
 #include "script/handler.h"
 #include "host/connect.cpp"
+#include "movement/handlermov.cpp"
+#include "movement/handlermov.h"
+#include "core/getinput.h"
 
 using namespace std;
 
@@ -60,6 +62,7 @@ int main() {
 
     hosthandler hosthandlerc;
     handler handlerc;
+    handlermov handlermov;
 
     while (true) {
         cout << "0 for pair mode" << endl;
@@ -77,9 +80,8 @@ int main() {
         cout << "11 Uninstall APK" << endl;
         cout << "12 Reboot" << endl;
         cout << "Enter your choice." << endl;
-        string input;
-        getline(cin, input);
-        cout << "Enter mode: " << input << endl;
+        getinput inputmode;
+        string input = inputmode.getinputf("Your choice: ");
 
         if (input == "0") {
             // Pair mode
@@ -93,8 +95,11 @@ int main() {
             hosthandlerc.hosthandlerfDisconn();
         } else if (input == "6") {
             // Handle manuel
-            handlerc.handlerf();
-        } else {
+            handlermov.handlermovf();
+        } else if (input == "8") {
+            exit(0);
+        }
+        else {
             cout << "\nDon't exist" << endl;
         }
     }

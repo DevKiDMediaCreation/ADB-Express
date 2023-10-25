@@ -7,7 +7,7 @@
 #include "handler.h"
 
 int handler::handlerf() {
-    text textc;
+    textmov textc;
     textc.textf("Hello, World!");
     return 0;
 }

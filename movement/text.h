@@ -8,7 +8,7 @@
 #include <iostream>
 #include <string>
 
-class text {
+class textmov {
     public:
     int textf(std::string text);
     int removef();

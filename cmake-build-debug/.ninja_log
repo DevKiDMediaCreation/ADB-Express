@@ -1,12 +1,14 @@
 # ninja log v5
-11	1461	7198310112002707	CMakeFiles/ADB_Express.dir/movement/text.cpp.obj	790e9e37d0180cea
-12	14194	7198304413090426	CMakeFiles/ADB_Express.dir/main.cpp.obj	82f6c62bab09b300
+12	2522	7198759241358225	CMakeFiles/ADB_Express.dir/movement/text.cpp.obj	790e9e37d0180cea
+37	3588	7198740482447805	CMakeFiles/ADB_Express.dir/main.cpp.obj	82f6c62bab09b300
 79	12165	7198304393400444	CMakeFiles/ADB_Express.dir/host/connect.cpp.obj	ace0fb5a60eb30c7
 17856	24618	7198270702274538	CMakeFiles/ADB_Express.dir/movement/swipe.cpp.obj	6e460c8c6495acd5
-32	1495	7198310112452692	CMakeFiles/ADB_Express.dir/script/handler.cpp.obj	f07949c66852f8b2
+30	2713	7198759243278182	CMakeFiles/ADB_Express.dir/script/handler.cpp.obj	f07949c66852f8b2
 24886	31155	7198270759864555	CMakeFiles/ADB_Express.dir/host/disconnect.cpp.obj	3c35d49e60d9b198
 18165	28256	7198270751134532	CMakeFiles/ADB_Express.dir/script/script.cpp.obj	b033c771b0950502
-54	4036	7198309164392661	CMakeFiles/ADB_Express.dir/movement/manuel.cpp.obj	9512d7cc1173e827
+68	3129	7198724821543630	CMakeFiles/ADB_Express.dir/movement/manuel.cpp.obj	9512d7cc1173e827
 28257	32000	7198270789064555	CMakeFiles/ADB_Express.dir/host/pair.cpp.obj	32115dda6b10bab1
 11	19256	7198271834912842	CMakeFiles/ADB_Express.dir/host/hosthandler.cpp.obj	8750d41d171602bb
-1496	2119	7198310117542686	ADB_Express.exe	a4f38860a7f0035a
+2713	3366	7198759249678198	ADB_Express.exe	4bc4adc774b53b50
+109	1804	7198724808313637	CMakeFiles/ADB_Express.dir/host/tcpip.cpp.obj	22bb429c81bd702
+56	2960	7198741448188282	CMakeFiles/ADB_Express.dir/movement/handlermov.cpp.obj	14d3f21121ab847e

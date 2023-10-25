@@ -5,15 +5,13 @@
 #include <string>
 
 #include "connect.h"
+#include "../core/getinput.h"
 
 using namespace std;
 
 inline int connect::connectf() {
-    cout << "0 via WiFi" << endl;
-    cout << "1 via USB" << endl;
-    string input;
-    getline(cin, input);
-    cout << "Enter mode: " << input << endl;
+    getinput inputf;
+    string input = inputf.getinputf("(0 via WiFi, 1 via USB) Enter mode:");
 
     if (input == "0") {
         string device_ip;

@@ -26,4 +26,10 @@ add_executable(ADB_Express main.cpp
         host/tcpip.cpp
         host/tcpip.h
         host/tcpip.cpp
+        movement/handlermov.cpp
+        movement/handlermov.h
+        core/getinput.cpp
+        core/getinput.h
+        host/reconnect.cpp
+        host/reconnect.h
 )
