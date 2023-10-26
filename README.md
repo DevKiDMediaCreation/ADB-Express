@@ -31,6 +31,11 @@ app install file {.apk} // Install by local computer
 ```js
 delay {ms}
 ```
+```js
+reset lock // Go Back top home
+```
+
+reset Auth // Lock the phone
 
 ### Swipe
 
@@ -103,3 +108,12 @@ keygen FILE
 ### Data transport (Need app)
 
 ### Reboot (Auth2)
+
+### Auth to unlock
+```js
+auth
+```
+
+File: auth.adbae
+pw type {type}
+pw input {pw}
