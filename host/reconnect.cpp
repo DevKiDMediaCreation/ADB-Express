@@ -1,5 +1,5 @@
 //
-// Created by ngosc on 25.10.2023.
+// Created by DevKiD on 25.10.2023.
 //
 
 #include "reconnect.h"
